@@ -1,29 +1,32 @@
+/* AJUSTES GENERALES */
+
 body 
 {
     background-color: #10161c; 
     color: white;
+    font-family: Ubuntu, sans-serif;
 } 
 li
 {
     list-style-type: none;
 }
+a 
+{
+    text-decoration: none;
+    color: white;
+}
+a:hover
+{
+    color: rgb(138, 138, 138);
+}
 .container
 {
-    border: 1px gray solid;
+    border: 1px #ff6600 solid;
     border-radius: 0.5em;
     margin-top: 5px;
     padding: 8px;
-    align-content: center;
 }
-.container > p 
-{
-    text-align: center;
-}
-main.container section
-{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
+
 .content
 {
     border: 1px gray solid;
@@ -33,16 +36,130 @@ main.container section
     margin-left: 0.2em;
     background-color: rgb(71, 71, 71);
 }
+/* AJUSTES GENERALES */
+
+/* HEADER */
+
+header
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+header img
+{
+    width: 10em;
+}
+.header-right
+{
+    margin-left: auto; /* Esto empuja el contenido a la derecha */
+    display: flex; /* Flexbox para alinear items */
+    align-items: center; /* Centrar verticalmente */
+}
+header a img 
+{
+    width: 5.5em;
+    height: 3.5em;
+}
+.botonContacto 
+{
+    text-align: center;
+    margin-left: 1em;
+    margin-right: 2em;
+}
+
+.botonContacto p 
+{
+    text-decoration: none;
+    width: 6em;
+    height: 2.5em;
+    background-color: #2033c2;
+    border-radius: 8px;
+}
+
+.botonContacto a 
+{
+    text-decoration: none;
+    line-height: 40px;
+    color: white;
+}
+
+.botonContacto p:hover 
+{
+    background-color: darkblue;
+}
+
+/* HEADER */
+
+/* NAV */
+
+nav
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+}
+nav ul
+{
+    display: flex;
+
+    flex-direction: row;
+    margin-left: -1em;
+}
+nav ul li
+{
+    margin: 0 1em; /* Espacio entre los elementos de la lista */
+}
+
+/* NAV */
+
+/* ASIDE */
+
+aside
+{
+    font-size: 1.1em;
+}
+aside ul li
+{
+    margin-top: 1em;
+}
+
+/* ASIDE */
+
+/* MAIN */
+
 main div
 {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+/* MAIN */
+
+/* FOOTER*/
+
+footer
+{
+    background: radial-gradient(circle, #303030, #10161c); /* Degradado radial de gris oscuro a negro */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* FOOTER*/
+
+/* MEDIA QUERIES */
+
 @media screen and (min-width:576px)
 {
     main div
     {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    nav
+    {
+        font-size: 1.2em;
     }
     footer > div 
     {
@@ -83,6 +200,16 @@ main div
     {
         grid-column: 1/2;
         grid-row: 1/2;
+        font-size: 1.5em;
+    }
+    nav ul
+    {
+        flex-direction: column;
+    }
+    nav ul li 
+    {
+        margin-top: 1em;
+        margin-left: -1em;
     }
     aside
     {
