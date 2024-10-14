@@ -55,10 +55,10 @@ header img
     display: flex; /* Flexbox para alinear items */
     align-items: center; /* Centrar verticalmente */
 }
-header a img 
+header a img /*foto perfil*/
 {
-    width: 5.5em;
-    height: 3.5em;
+    width: 4em;
+    height: 3em;
 }
 .botonContacto 
 {
@@ -72,7 +72,7 @@ header a img
     text-decoration: none;
     width: 6em;
     height: 2.5em;
-    background: linear-gradient(#2033c2,#767ebd);
+    background: linear-gradient(#ff6600,#dd7936);
     border-radius: 8px;
 }
 
