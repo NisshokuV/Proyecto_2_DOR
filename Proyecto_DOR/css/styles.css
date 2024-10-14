@@ -204,7 +204,7 @@ footer ul li
         grid-template-columns: 1fr 1fr; /* Dos columnas en pantallas medianas */
     }
 }
-@media screen and (min-width:912px)
+@media screen and (min-width:912px) and (orientation: landscape) and (min-width: 576px)
 {
     main div 
     {
